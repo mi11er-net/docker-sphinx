@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Simple Command to run sphinx against the current directory
+run --rm -v $(PWD):/work sphinx:test sphinx-quickstart "$@"
