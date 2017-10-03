@@ -1,5 +1,5 @@
 # Docker-Sphinx
-A simple docker container to run the [sphinx](http://www.sphinx-doc.org/en/stable/).
+A simple docker container to run [sphinx](http://www.sphinx-doc.org/en/stable/).
 
 ## Example Usage
 
