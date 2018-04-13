@@ -1,4 +1,4 @@
-FROM python:2-alpine
+FROM python:2.7.13-alpine3.6
 
 LABEL name='sphinx'
 LABEL version="1.0"
