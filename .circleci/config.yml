@@ -1,0 +1,23 @@
+defaults: &defaults
+  working_directory: ~/project/repo
+  docker:
+    - image: circleci/node:latest@sha256:b64b32f1a91ce5a48f6cd954f823b78b758d000482d199c6a251a559663e23ab
+
+version: 2
+jobs:
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 17.05.0-ce
+      - run:
+          name: Install Docker client
+          command: sudo apt-get install docker
+      - run: docker build .
+
+workflows:
+  version: 2
+  test_and_release:
+    jobs:
+      - test
