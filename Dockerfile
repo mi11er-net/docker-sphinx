@@ -1,4 +1,4 @@
-FROM python:2.7.14-alpine3.6@sha256:8b3366ac203d24ec031c64177d86cbc0b554f08732756883e08fbb8d2b537747
+FROM python:2.7.14-alpine3.6@sha256:425b6c782dbfe7f601eab738cf7e2d0588197356aa36fe1a92012c368ebeed31
 
 LABEL name='sphinx'
 LABEL version="1.0"
